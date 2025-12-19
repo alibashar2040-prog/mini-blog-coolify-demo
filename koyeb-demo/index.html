@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ عرض Koyeb السحابي السحري</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- خلفية متحركة -->
+    <div class="bg-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="container">
+        <!-- الهيدر -->
+        <header class="main-header">
+            <div class="logo">
+                <i class="fas fa-cloud-moon-rain"></i>
+                <h1>✨ العرض <span class="gradient-text">السحابي</span> السحري</h1>
+            </div>
+            <div class="badge">
+                <i class="fas fa-rocket"></i>
+                <span>Koyeb</span>
+            </div>
+        </header>
+
+        <!-- البطل الرئيسي -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <span class="title-word title-word-1">السحابة</span>
+                    <span class="title-word title-word-2">تلتقي</span>
+                    <span class="title-word title-word-3">بالخيال</span>
+                </h2>
+                <p class="hero-subtitle">نشر تطبيق متكامل خلال دقيقتين!</p>
+                
+                <!-- الإحصائيات الحية -->
+                <div class="live-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="responseTime">--</span>
+                            <span class="stat-label">مللي ثانية</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="region">--</span>
+                            <span class="stat-label">المنطقة</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">جاهزية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- فقاعة الخيال -->
+            <div class="magic-bubble">
+                <div class="bubble-content">
+                    <i class="fas fa-magic"></i>
+                    <p>كل شيء يعمل على السحابة!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- منطقة التجربة -->
+        <section class="demo-section">
+            <h3 class="section-title">
+                <i class="fas fa-flask"></i>
+                منطقة التجربة التفاعلية
+            </h3>
+            
+            <div class="demo-grid">
+                <!-- الأزرار التفاعلية -->
+                <div class="button-grid">
+                    <button class="action-btn btn-primary" onclick="testAPI()">
+                        <i class="fas fa-bolt"></i>
+                        اختبار API السريع
+                    </button>
+                    <button class="action-btn btn-secondary" onclick="showServerInfo()">
+                        <i class="fas fa-server"></i>
+                        معلومات الخادم
+                    </button>
+                    <button class="action-btn btn-success" onclick="showFeatures()">
+                        <i class="fas fa-star"></i>
+                        المميزات السحرية
+                    </button>
+                    <button class="action-btn btn-warning" onclick="animatePage()">
+                        <i class="fas fa-fairy"></i>
+                        تأثيرات خيالية
+                    </button>
+                </div>
+                
+                <!-- عرض النتائج -->
+                <div class="result-card">
+                    <div class="result-header">
+                        <h4><i class="fas fa-terminal"></i> النتائج المباشرة</h4>
+                        <button class="clear-btn" onclick="clearResults()">
+                            <i class="fas fa-broom"></i> مسح
+                        </button>
+                    </div>
+                    <div class="result-body" id="response">
+                        <div class="welcome-message">
+                            <i class="fas fa-hat-wizard"></i>
+                            <p>مرحباً في عالم السحابة السحري! استخدم الأزرار أعلاه لبدء التجربة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- المميزات -->
+        <section class="features-section">
+            <h3 class="section-title">
+                <i class="fas fa-gem"></i>
+                المميزات السحرية لـ Koyeb
+            </h3>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon color-1">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h4>نشر فوري</h4>
+                    <p>نشر تطبيقاتك في ثوانٍ معدودة مع CI/CD مدمج</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon color-2">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>شبكة عالمية</h4>
+                    <p>يعمل في 20+ منطقة حول العالم لأداء ممتاز</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon color-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>أمان تلقائي</h4>
+                    <p>SSL مجاني وجدران حماية مدمجة</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon color-4">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h4>توسع سحابي</h4>
+                    <p>توسع تلقائي مع زيادة الحمل</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- معلومات تقنية -->
+        <section class="tech-section">
+            <div class="tech-card">
+                <h4><i class="fas fa-code"></i> المعلومات التقنية</h4>
+                <div class="tech-info">
+                    <div class="tech-item">
+                        <span class="tech-label">المنصة:</span>
+                        <span class="tech-value">Koyeb PaaS</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">النشر:</span>
+                        <span class="tech-value">Docker Containers</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">الدعم:</span>
+                        <span class="tech-value">Node.js, Python, Go, Rust</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">المجانية:</span>
+                        <span class="tech-value">نعم، بدون بطاقة ائتمان</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- الفوتر -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>تم تصميم هذا العرض بخيال واسع 💫</p>
+                <p class="footer-note">يعمل على منصة Koyeb السحابية | عرض أكاديمي تقني</p>
+                <div class="social-icons">
+                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-magic"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- الرسائل العائمة -->
+    <div class="floating-message" id="floatingMsg">
+        <i class="fas fa-sparkles"></i>
+        <span>سحابة سحرية!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
